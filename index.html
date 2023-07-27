@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search Widget Test</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .wrappper {
+        width: 100%;
+      }
+      @media (min-width: 480px) {
+        .wrappper {
+          width: 100%;
+        }
+      }
+      @media (min-width: 1200px) {
+        .wrappper {
+          margin-top: 100px;
+          width: 960px;
+        }
+      }
+    </style>
+    <style>
+      #search-widget {
+        --widget-primary-dark: #431796;
+        --widget-primary-normal: #612ace;
+        --widget-primary-light: #805ae9;
+        --widget-height: 50px;
+        --widget-font-family: "Helvetica Neue", Arial, sans-serif;
+        --widget-font-size: 17px;
+        --widget-font-color: #111;
+        --widget-font-color-inverted: #fff;
+        --widget-small-font-size: 12px;
+        --widget-font-weight: 200;
+        --widget-border-radius: 10px;
+        --widget-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        --widget-input-horizontal-padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="wrappper">
+      <div id="search-widget"></div>
+    </div>
+    <script
+      id="search-widget-script"
+      src="./dist/bundle.js"
+      data-partner-id="amivac_fr_wl"
+      data-partner-campaign-id="test"
+    ></script>
+  </body>
+</html>
